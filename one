@@ -1,0 +1,10 @@
+#include<stdio.h>
+//Microsoft Visual C++ 2010 Express
+int main(){
+	FILE*f;
+	fopen_s(&f,"output.csv","w");
+	fprintf_s(f,"生徒氏名,国語,数学,英語,社会,理科");
+
+	fclose(f);
+	return 0;
+}
